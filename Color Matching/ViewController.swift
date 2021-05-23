@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var outputUsersColor: UIView!
+    @IBOutlet weak var outputTextColor: UILabel!
     
     @IBOutlet weak var alphaCounter: UILabel!
     @IBOutlet weak var redCounter: UILabel!
@@ -31,7 +32,18 @@ class ViewController: UIViewController {
         let blueColorCurrent = String(format: "%.2f", blueSlider.value)
         blueCounter.text = blueColorCurrent
         
-        outputUsersColor.backgroundColor = .init(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: CGFloat(alphaSlider.value))
+        outputUsersColor.backgroundColor = .init(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: CGFloat(alphaSlider.value))
+        
+        //Тут уже пошла импровизация :)
+        let newRedCount = String(format: "%.f", redSlider.value * 255)
+        let newGreenCount = String(format: "%.f", greenSlider.value * 255)
+        let newBlueCount = String(format: "%.f", blueSlider.value * 255)
+        
+        outputTextColor.text = .init("R: \(newRedCount) \nG: \(newGreenCount) \nB: \(newBlueCount)")
     }
     
     override func viewDidLoad() {
