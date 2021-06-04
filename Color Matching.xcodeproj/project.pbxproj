@@ -56,15 +56,39 @@
 		2409440C2659575700C3EF2B /* Color Matching */ = {
 			isa = PBXGroup;
 			children = (
+				247505F4266A3E82003E488A /* Storyboard */,
+				247505F3266A3E75003E488A /* Resources */,
+				247505F2266A3E4B003E488A /* ViewController */,
 				2409440D2659575700C3EF2B /* AppDelegate.swift */,
 				2409440F2659575700C3EF2B /* SceneDelegate.swift */,
-				240944112659575700C3EF2B /* ViewController.swift */,
-				240944132659575700C3EF2B /* Main.storyboard */,
-				240944162659575A00C3EF2B /* Assets.xcassets */,
-				240944182659575A00C3EF2B /* LaunchScreen.storyboard */,
 				2409441B2659575A00C3EF2B /* Info.plist */,
 			);
 			path = "Color Matching";
+			sourceTree = "<group>";
+		};
+		247505F2266A3E4B003E488A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				240944112659575700C3EF2B /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		247505F3266A3E75003E488A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				240944162659575A00C3EF2B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		247505F4266A3E82003E488A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				240944132659575700C3EF2B /* Main.storyboard */,
+				240944182659575A00C3EF2B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

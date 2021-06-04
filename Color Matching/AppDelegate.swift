@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Color Matching
 //
-//  Created by Олег on 22.05.21.
+//  Created by Олег  on 22.05.21.
 //
 
 import UIKit
