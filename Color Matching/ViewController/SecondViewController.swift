@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SecondViewController: UIViewController {
     
     //MARK: - IBOutlets
     @IBOutlet weak var outputUsersColor: UIView!
@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
+    var activeTextField: UITextField? = nil
+    
     //MARK: - Public func
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +31,12 @@ class ViewController: UIViewController {
         outputColor()
         setValue(for: redTF, greenTF, blueTF, alphaTF)
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
     
-    //MARK: - IBACtion
+    //MARK: - IBAction
     @IBAction func rgbaSlider() {
         outputColor()
         setValue(for: redTF, greenTF, blueTF, alphaTF)
@@ -65,6 +71,4 @@ class ViewController: UIViewController {
     private func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
     }
-    
 }
-
