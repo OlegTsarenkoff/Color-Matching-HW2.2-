@@ -2,28 +2,28 @@
 //  FirstViewController.swift
 //  Color Matching
 //
-//  Created by Олег on 4.06.21.
+//  Created by Oleg Tsarenkoff on 4.06.21.
 //
 
 import UIKit
 
+protocol SecondViewControllerDelegate {
+    func outputColor(_ color: UIColor)
+}
+
 class FirstViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let secondVC = segue.destination as! SecondViewController
+        secondVC.delegate = self
+        secondVC.userColor = view.backgroundColor
+        
     }
-    */
+}
 
+// MARK: - ColorDelegate
+extension FirstViewController: SecondViewControllerDelegate {
+    func outputColor(_ color: UIColor) {
+        view.backgroundColor = color
+    }
 }

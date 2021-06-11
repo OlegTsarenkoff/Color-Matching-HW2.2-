@@ -58,12 +58,12 @@
 		2409440C2659575700C3EF2B /* Color Matching */ = {
 			isa = PBXGroup;
 			children = (
-				247505F4266A3E82003E488A /* Storyboard */,
-				247505F3266A3E75003E488A /* Resources */,
-				247505F2266A3E4B003E488A /* ViewController */,
 				2409440D2659575700C3EF2B /* AppDelegate.swift */,
-				2409440F2659575700C3EF2B /* SceneDelegate.swift */,
 				2409441B2659575A00C3EF2B /* Info.plist */,
+				247505F3266A3E75003E488A /* Resources */,
+				2409440F2659575700C3EF2B /* SceneDelegate.swift */,
+				247505F4266A3E82003E488A /* Storyboard */,
+				247505F2266A3E4B003E488A /* ViewController */,
 			);
 			path = "Color Matching";
 			sourceTree = "<group>";
@@ -71,8 +71,8 @@
 		247505F2266A3E4B003E488A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				240944112659575700C3EF2B /* SecondViewController.swift */,
 				247505F5266A50FB003E488A /* FirstViewController.swift */,
+				240944112659575700C3EF2B /* SecondViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -317,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U48XQQB49;
 				INFOPLIST_FILE = "Color Matching/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U48XQQB49;
 				INFOPLIST_FILE = "Color Matching/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
