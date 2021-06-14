@@ -34,6 +34,12 @@ class SecondViewController: UIViewController {
         
         setSliders()
         setValue(for: redTF, greenTF, blueTF, alphaTF)
+        
+        
+    }
+    
+    func UIKeyboardWillShow(){
+        
     }
     
     //MARK: - IBAction
