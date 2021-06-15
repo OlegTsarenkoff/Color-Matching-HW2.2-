@@ -34,19 +34,12 @@ class SecondViewController: UIViewController {
         
         setSliders()
         setValue(for: redTF, greenTF, blueTF, alphaTF)
-        
-        
-    }
-    
-    func UIKeyboardWillShow(){
-        
     }
     
     //MARK: - IBAction
     @IBAction func rgbaSlider() {
         setValue(for: redTF, greenTF, blueTF, alphaTF)
         outputColor()
-        delegate?.outputColor(outputUsersColor.backgroundColor ?? .white)
     }
 }
 
@@ -60,6 +53,8 @@ extension SecondViewController {
             blue: CGFloat(blueSlider.value),
             alpha: CGFloat(alphaSlider.value)
         )
+        
+        delegate?.outputColor(outputUsersColor.backgroundColor ?? .white)
     }
     
     private func setValue(for textFields: UITextField...) {
