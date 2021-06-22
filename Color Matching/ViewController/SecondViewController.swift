@@ -60,10 +60,10 @@ extension SecondViewController {
     private func setValue(for textFields: UITextField...) {
         textFields.forEach { textField in
             switch textField {
-            case redTF : textField.text = string(from: redSlider)
-            case greenTF : textField.text = string(from: greenSlider)
-            case blueTF : textField.text = string(from: blueSlider)
-            default : textField.text = string(from: alphaSlider)
+            case redTF: textField.text = string(from: redSlider)
+            case greenTF: textField.text = string(from: greenSlider)
+            case blueTF: textField.text = string(from: blueSlider)
+            default: textField.text = string(from: alphaSlider)
             }
         }
     }
